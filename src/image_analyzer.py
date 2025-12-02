@@ -39,7 +39,7 @@ class ImageMoodAnalyzer:
             "color": "#87CEEB"  
         },
         "sad and melancholic": {
-            "valence": 0.2,
+            "valence": 0.5,
             "energy": 0.3,
             "emoji": "😢",
             "color": "#4682B4"  
@@ -51,13 +51,13 @@ class ImageMoodAnalyzer:
             "color": "#2F4F4F"  
         },
         "romantic and gentle": {
-            "valence": 0.7,
-            "energy": 0.4,
+            "valence": 0.5,
+            "energy": 0.3,
             "emoji": "💕",
             "color": "#FFB6C1"  
         },
         "angry and aggressive": {
-            "valence": 0.1,
+            "valence": 0.8,
             "energy": 0.9,
             "emoji": "😠",
             "color": "#DC143C"  
