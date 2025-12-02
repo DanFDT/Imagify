@@ -190,7 +190,7 @@ def render_header():
     <div class="main-header">
         <h1>🎵 Imagify 🖼️</h1>
         <p>Upload an image and discover songs that match its mood!</p>
-        <p style="font-size: 0.9em; opacity: 0.8;">✨ Over 850+ Most Streamed Songs</p>
+        <p style="font-size: 0.9em; opacity: 0.8;">✨ Over 800+ Most Streamed Songs</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -214,8 +214,7 @@ def render_sidebar():
                 st.metric("Songs", f"{stats['total_songs']:,}")
             with col2:
                 st.metric("Artists", f"{stats['artists']:,}")
-            
-            st.write(f"**Total Streams:** {stats['total_streams']:,}")
+
             st.write(f"**Year Range:** {stats['date_range']['earliest']} - {stats['date_range']['latest']}")
         
         st.divider()
@@ -385,7 +384,6 @@ def render_recommendations():
                         <div class="song-title">{i}. {song['name']}</div>
                         <div>👤 {song['artist']}</div>
                         <div>📅 {song['release_date']}</div>
-                        <div>📊 {song['streams']} streams</div>
                         <div class="match-badge">{song['match_score']:.0%} match</div>
                     </div>
                 </div>
