@@ -1,13 +1,13 @@
 # 🎵 Imagify: Image-to-Song Recommender
 
-Upload an image and get song recommendations that match its mood!
+Upload an image and get song recommendations that match its mood! 
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ---
 
-## 🎬 Demo
+## 🎬 Demo 
 
 ### Analyze an Image and Get Song Recommendations
 ![Demo](demo/demo_video_1.gif)
