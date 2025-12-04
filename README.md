@@ -36,7 +36,17 @@ If both commands show a version number, you're ready to continue.
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/DanFDT/Imagify.git
+```
+```bash
 cd Imagify
+```
+
+### 2. Create Virtual Environment (Recommended)
+```bash
+python -m venv venv
+```
+```bash
+venv\scripts\activate
 ```
 
 ### 2. Install Dependencies
