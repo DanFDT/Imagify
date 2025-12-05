@@ -190,7 +190,7 @@ def render_header():
     <div class="main-header">
         <h1>🎵 Imagify 🖼️</h1>
         <p>Upload an image and discover songs that match its mood!</p>
-        <p style="font-size: 0.9em; opacity: 0.8;">✨ Over 800+ Most Streamed Songs</p>
+        <p style="font-size: 0.9em; opacity: 0.8;">✨ Over 1500+ Songs</p>
     </div>
     """, unsafe_allow_html=True)
 

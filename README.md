@@ -67,9 +67,9 @@ The app will open at `http://localhost:8501` and you can open the link in a brow
 
 ## 💡 How It Works
 
-1. **Upload an image or choose from the sampples** (JPG, JPEG, PNG)
+1. **Upload an image or choose from the samples** (JPG, JPEG, PNG)
 2. **AI analyzes the mood** using OpenAI's CLIP model
-3. **Get 10 song recommendations** from 800+ most-streamed Spotify songs
+3. **Get 10 song recommendations** from 1500+ most-streamed Spotify songs
 4. **Click to open in Spotify or YouTube**
 
 The AI detects 8 different moods:
