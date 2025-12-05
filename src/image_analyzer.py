@@ -39,8 +39,8 @@ class ImageMoodAnalyzer:
             "color": "#87CEEB"  
         },
         "sad and melancholic": {
-            "valence": 0.5,
-            "energy": 0.3,
+            "valence": 0.2,
+            "energy": 0.2,
             "emoji": "😢",
             "color": "#4682B4"  
         },
