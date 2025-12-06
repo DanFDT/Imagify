@@ -19,7 +19,7 @@ Upload an image and get song recommendations that match its mood!
 
 ## 🚀 How to Install
 
-### 0. Install Python (Required)
+### 0. Install Python & Git (Required)
 
 If you don’t have Python installed, download it here:
 
@@ -27,10 +27,15 @@ If you don’t have Python installed, download it here:
 
 Make sure to check “Add Python to PATH” during installation.
 
+If you don't have git installed, download it here:
+
+🔗https://git-scm.com/install/
+
 Verify installation:
 ```bash
 python --version 
 pip --version
+git --version
 ```
 If both commands show a version number, you're ready to continue.
 ### 1. Clone the Repository
@@ -59,7 +64,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-The app will open at `http://localhost:8501` and you can open the link in a browser
+**The app will open at `http://localhost:8501` and you can copy & paste the link in a browser**
 
 **Note:** First run takes 1-2 minutes to download the AI model (~600MB).
 
