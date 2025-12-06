@@ -12,7 +12,9 @@ Upload an image and get song recommendations that match its mood!
 ### Analyze an Image and Get Song Recommendations
 ![Demo](demo/demo_video_1.gif)
 
-### Different Moods, Different Songs
+
+
+### Different images, Different moods, Different Songs
 ![Variety](demo/demo_video_2.gif)
 
 ---
@@ -37,7 +39,7 @@ python --version
 pip --version
 git --version
 ```
-If both commands show a version number, you're ready to continue.
+If these commands show a version number, you're ready to continue.
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/DanFDT/Imagify.git
@@ -74,12 +76,11 @@ streamlit run app.py
 
 1. **Upload an image or choose from the samples** (JPG, JPEG, PNG)
 2. **AI analyzes the mood** using OpenAI's CLIP model
-3. **Get 10 song recommendations** from 1500+ most-streamed Spotify songs
+3. **Get 10 song recommendations** from over 2000+ songs
 4. **Click to open in Spotify or YouTube**
 
-The AI detects 8 different moods:
-- 😄 Happy & Energetic
-- 🤩 Excited & Intense
+The AI detects 7 different moods:
+- 😄 Happy & Excited
 - 😌 Calm & Peaceful
 - 😢 Sad & Melancholic
 - 🌙 Dark & Mysterious
@@ -95,7 +96,7 @@ The AI detects 8 different moods:
 
 Edit `src/song_recommender.py` line 88:
 ```python
-max_distance = 0.25  # Lower = stricter matching (0.25 for 85%+ matches)
+max_distance = 0.15  # Lower = stricter matching (0.25 for 85%+ matches)
 ```
 ---
 
@@ -113,7 +114,6 @@ max_distance = 0.25  # Lower = stricter matching (0.25 for 85%+ matches)
 - **OpenAI** - [CLIP model](https://openai.com/research/clip)
 - **Hugging Face** - [Transformers library](https://huggingface.co/transformers/)
 - **Streamlit** - [Web framework](https://streamlit.io/)
-- **Kaggle** - [Spotify dataset](https://www.kaggle.com/datasets/abdulszz/spotify-most-streamed-songs?resource=download)
 
 ---
 

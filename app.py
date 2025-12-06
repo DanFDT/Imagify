@@ -21,7 +21,7 @@ st.set_page_config(
 # CUSTOM CSS STYLING
 st.markdown("""
 <style>
-    /* ===== HEADER ===== */
+    /* HEADER */
     .main-header {
         text-align: center;
         padding: 1rem 0;
@@ -29,8 +29,25 @@ st.markdown("""
         border-radius: 10px;
         margin-bottom: 2rem;
     }
+    /* ANALYZE BUTTON */
+    button[data-testid="stBaseButton-primary"] {
+        min-height: 150px !important;
+        height: 60px !important;
+        padding: 1rem 2rem !important;
+        transition: all 0.2s ease !important;
+    }
 
-    /* ===== MOOD CARD ===== */
+    button[data-testid="stBaseButton-primary"]:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 6px 20px rgba(29, 185, 84, 0.4) !important;
+    }
+
+    button[data-testid="stBaseButton-primary"] p {
+        font-size: 2rem !important;
+        font-weight: 600 !important;
+        margin: 0 !important;
+    }
+    /* MOOD CARD */
     .mood-card {
         padding: 1.5rem;
         border-radius: 10px;
@@ -47,7 +64,7 @@ st.markdown("""
         box-shadow: 0 0 0 1px #333;
     }
 
-    /* ===== SONG CARD (Cylindrical Glow Effect) ===== */
+    /* SONG CARD Glow Effect */
     .song-card {
         position: relative;
         border-radius: 9999px;
@@ -105,7 +122,7 @@ st.markdown("""
         margin-right: 10px;
     }
 
-    /* ===== ALBUM COVER ===== */
+    /* ALBUM COVER  */
     .song-cover, .song-cover-placeholder {
         width: 80px;
         height: 80px;
@@ -120,7 +137,7 @@ st.markdown("""
         background-color: #333;
     }
 
-    /* ===== SONG INFO TEXT ===== */
+    /* SONG INFO TEXT  */
     .song-info {
         display: flex;
         flex-direction: column;
@@ -132,7 +149,7 @@ st.markdown("""
         font-weight: 700;
     }
 
-    /* ===== ICON BUTTONS (Spotify / YouTube) ===== */
+    /* ICON BUTTONS (Spotify / YouTube) */
     .song-icon-btn {
         width: 40px;
         height: 40px;
@@ -166,6 +183,7 @@ st.markdown("""
         opacity: 0.3;
         pointer-events: none;
     }
+   
 </style>
 """, unsafe_allow_html=True)
 
@@ -189,8 +207,8 @@ def render_header():
     st.markdown("""
     <div class="main-header">
         <h1>🎵 Imagify 🖼️</h1>
-        <p>Upload an image and discover songs that match its mood!</p>
-        <p style="font-size: 0.9em; opacity: 0.8;">✨ Over 1500+ Songs</p>
+        <h3>Upload an image and discover songs that match its mood!</h3>
+        <p style="font-size: 1.5em; opacity: 0.8;">✨ Over 2000+ Songs ✨</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -252,11 +270,11 @@ def render_image_upload():
             st.image(uploaded_file, caption="Uploaded Image", use_container_width=True)
         
         with col_btn:
-            st.write("")  
-            st.write("")
+            st.markdown('<div class="analyze-button">', unsafe_allow_html=True)
             if st.button("🔍 Analyze Mood", type="primary", use_container_width=True):
                 analyze_image(uploaded_file)
-    
+            st.markdown('</div>', unsafe_allow_html=True)
+
     else:
         # Show sample images
         st.subheader("📁 Or try a sample image:")

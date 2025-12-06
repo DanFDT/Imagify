@@ -94,8 +94,7 @@ class SongRecommender:
         
         # Filter for high-quality matches
         # Match score = 1 - (distance / 2)
-        # For 75%+ match: distance <= 0.50
-        max_distance = 0.10
+        max_distance = 0.15 # For 75%+ match: distance <= 0.50
         
         # Build filter conditions
         filters = (self.df['mood_distance'] <= max_distance)

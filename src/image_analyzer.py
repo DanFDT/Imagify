@@ -20,20 +20,14 @@ class ImageMoodAnalyzer:
     # MOOD CATEGORY DEFINITIONS
     # Each mood has valence (0-1, sad to happy) and energy (0-1, calm to intense)
     MOOD_CATEGORIES = {
-        "happy and energetic": {
-            "valence": 0.9,  # Very positive
+        "happy and excited": {
+            "valence": 0.8,  # Very positive
             "energy": 0.8,   # High energy
             "emoji": "😄",
             "color": "#FFD700"  
         },
-        "excited and intense": {
-            "valence": 0.8,
-            "energy": 0.9,
-            "emoji": "🤩",
-            "color": "#FF6347"  
-        },
         "calm and peaceful": {
-            "valence": 0.6,
+            "valence": 0.5,
             "energy": 0.2,
             "emoji": "😌",
             "color": "#87CEEB"  
@@ -51,13 +45,13 @@ class ImageMoodAnalyzer:
             "color": "#2F4F4F"  
         },
         "romantic and gentle": {
-            "valence": 0.5,
-            "energy": 0.3,
+            "valence": 0.2,
+            "energy": 0.2,
             "emoji": "💕",
             "color": "#FFB6C1"  
         },
         "angry and aggressive": {
-            "valence": 0.8,
+            "valence": 0.9,
             "energy": 0.9,
             "emoji": "😠",
             "color": "#DC143C"  
