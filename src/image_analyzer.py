@@ -1,6 +1,5 @@
 """
 Image Mood Analyzer Module
-Uses CLIP (Contrastive Language-Image Pre-training) for zero-shot mood classification.
 Analyzes images and extracts mood characteristics (valence, energy) for song matching.
 """
 

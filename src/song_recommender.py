@@ -1,7 +1,6 @@
 """
 Song Recommender Module
-Recommends songs from Spotify's most streamed songs based on mood scores.
-No API authentication required - uses local CSV dataset.
+Recommends songs songs based on mood scores.
 """
 
 import pandas as pd
@@ -12,7 +11,6 @@ from pathlib import Path
 class SongRecommender:
     """
     Recommends songs based on valence (positivity) and energy (intensity) scores.
-    Uses a local dataset of Spotify's most streamed songs.
     """
     
     # Dataset configuration
@@ -72,7 +70,7 @@ class SongRecommender:
     def recommend_songs(self, mood, valence, energy, limit=10, min_streams=None):
         """
         Recommend songs based on mood characteristics.
-        
+    
         Args:
             mood (str): Mood category (for display purposes)
             valence (float): Target valence/positivity (0.0 to 1.0)
